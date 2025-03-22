@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+#start{
+    position: relative;
+    top: 400px;
+    height: 12vh;
+    width: 11vw;
+    border: 1.5px solid black;
+    color: greenyellow;
+    background-color: grey;
+    font-size: 20px;
+    border-radius: 12px;
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  z-index: 1;
+}
+#head{
+    position: relative;
+    bottom: 50px;
+    right: 500px;
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: green;
+  animation: headanimation 6s 0s infinite;
+}
+
+@keyframes headanimation{
+  0%{
+    right: 500px;
+    bottom: 50px;
+    opacity: 0;
+  }
+  20%{
+    right: 300px;
+    bottom: -70px;
+    opacity: 1;
+  }
+  40%{
+    right: 100px;
+    bottom: -190px;
+    opacity: 0;
+  }
+  60%{
+    right: -100px;
+    bottom: -310px;
+    opacity: 1;
+  }
+  80%{
+    right: -300px;
+    bottom: -430px;
+    opacity: 0;
+  }
+  100%{
+    right: -500px;
+    bottom: -550px;
+    opacity: 1;
+  }
+
+}
+#badnote{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  height: 4vh;
+  width: 22vw;
+  position: relative;
+  top: 450px;
+  left: 600px;
+  animation: text 8s forwards ease;
+}
+@keyframes text{
+  0%{
+    color: white;
+  }
+  50%{
+  color: black;
+  }
+  100%{
+  color: white;
+  }
+}
